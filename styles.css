@@ -1,32 +1,35 @@
 .mainContainer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.sizeButton {
+    padding: 10px;
+    margin: 10px;
+}
+
 .gridContainer {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: black;
-    gap: 2px;
     padding: 2px;
+    width: 500px;
+    height: 500px;
 }
 
 .gridRows {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2px;
+    flex: 1;
 }
 
 .gridBlocks {
+    flex: 1;
     background-color: white;
-    padding: 10px;
 }
 
 .traced {
+    flex: 1;
     background-color: dimgray;
-    padding: 10px;
 }
