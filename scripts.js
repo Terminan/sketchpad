@@ -15,6 +15,9 @@ for (let y = 0; y < 16; y++) {
         const gridBlock = document.createElement("div");
         gridBlock.classList.add("gridBlocks");
         gridBlock.setAttribute("id", `h${convertToHex(x)}v${convertToHex(y)}`);
+        gridBlock.addEventListener("mouseover", () => {
+            gridBlock.className = "traced";
+        })
         gridRow.appendChild(gridBlock);
     }
     gridContainer.appendChild(gridRow);
