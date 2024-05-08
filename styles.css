@@ -1,0 +1,21 @@
+.mainContainer {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    gap: 2px;
+    padding: 2px;
+}
+
+.gridRows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.gridBlocks {
+    background-color: white;
+    padding: 10px;
+}
