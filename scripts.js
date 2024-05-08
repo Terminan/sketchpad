@@ -29,7 +29,7 @@ function setGridSize(bound) {
 
 function changeGridSize() {
     const gridContainer = document.querySelector(".gridContainer");
-    let size = Math.floor(parseInt(window.prompt("What size grid would you like? (1-100)", 16)));
+    let size = parseInt(window.prompt("What size grid would you like? (1-100)", 16));
     if (size !== NaN && size >= 1 && size <= 100) {
         mainContainer.removeChild(gridContainer);
         setGridSize(size);
