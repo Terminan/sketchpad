@@ -10,6 +10,57 @@
     margin: 10px;
 }
 
+.colorPicker {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.colorChoices {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.black {
+    flex: 1;
+    background-color: black;
+}
+
+.white {
+    flex: 1;
+    background-color: white;
+}
+
+.red {
+    flex: 1;
+    background-color: red;
+}
+
+.blue {
+    flex: 1;
+    background-color: blue;
+}
+
+.green {
+    flex: 1;
+    background-color: green;
+}
+
+.yellow {
+    flex: 1;
+    background-color: yellow;
+}
+
+.orange {
+    flex: 1;
+    background-color: orange;
+}
+
+.purple {
+    flex: 1;
+    background-color: purple;
+}
+
 .gridContainer {
     display: flex;
     flex-direction: column;
@@ -27,9 +78,4 @@
 .gridBlocks {
     flex: 1;
     background-color: white;
-}
-
-.traced {
-    flex: 1;
-    background-color: dimgray;
 }
