@@ -2,6 +2,9 @@ const hexArray = ["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F
 
 const mainContainer = document.querySelector(".mainContainer");
 
+const gridContainer = document.createElement("div");
+gridContainer.classList.add("gridContainer");
+
 for (let y = 0; y < 16; y++) {
     const gridRow = document.createElement("div");
     gridRow.classList.add("gridRows");
@@ -12,5 +15,7 @@ for (let y = 0; y < 16; y++) {
         gridBlock.setAttribute("id", `h${hexArray[x]}v${hexArray[y]}`);
         gridRow.appendChild(gridBlock);
     }
-    mainContainer.appendChild(gridRow);
+    gridContainer.appendChild(gridRow);
 }
+
+mainContainer.appendChild(gridContainer);
