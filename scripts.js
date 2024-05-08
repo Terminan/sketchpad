@@ -15,7 +15,9 @@ function setGridSize(bound) {
             gridBlock.classList.add("gridBlocks");
             gridBlock.setAttribute("id", `h${convertToHex(x)}v${convertToHex(y)}`);
             gridBlock.addEventListener("mouseover", () => {
-                gridBlock.className = "traced";
+                if (mouse) {
+                    gridBlock.className = "traced";
+                }
             })
             gridRow.appendChild(gridBlock);
         }
@@ -45,3 +47,7 @@ sizeButton.addEventListener("click", changeGridSize);
 mainContainer.appendChild(sizeButton);
 
 setGridSize(16);
+
+let mouse = false;
+document.onmousedown = () => {mouse = true}
+document.onmouseup = () => {mouse = false}
